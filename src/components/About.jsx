@@ -29,10 +29,12 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        I'm a skilled software developer with expertise in TypeScript and
-        JavaScript, and I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+      I’m a creative professional specializing in social media management, content writing, graphic design, and web development. With expertise in React JS, Three JS, Photoshop, and Illustrator, I deliver unique, high-quality designs and interactive web experiences. From logos and banners to custom prints and responsive websites, I’m here to bring your vision to life with creativity and precision.
+
+<br /> {/* Added line space */}
+      <div className='mt-4'> {/* Added margin */}
+        <strong>Let’s create something amazing together!</strong> {/* Made text bold */}
+      </div>
       </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
@@ -44,4 +46,3 @@ const About = () => {
 }
 
 export default SectionWrapper(About, "about");
-
